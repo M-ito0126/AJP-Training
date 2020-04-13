@@ -1,5 +1,4 @@
 import java.util.Date;
-import java.text.SimpleDateFormat;
 
 public class Type {
     public static void main(String []args) {
@@ -8,13 +7,12 @@ public class Type {
         int number = 45;
         boolean bool = true;
         Date date = new Date();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd/E");
         
-    System.out.println(c);
-    System.out.println(name);
-    System.out.println(number);
-    System.out.println(true);
-    System.out.println(sdf.format(date));
+    System.out.println("文字型:" + c);
+    System.out.println("文字列型:" + name);
+    System.out.println("整数型:" + number);
+    System.out.println("論理型:" + bool);
+    System.out.println("日付型:" + date);
     
     }
 }
