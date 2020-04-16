@@ -3,11 +3,9 @@ public class Array {
         String word = "orange,apple,cherry,grape,apple";
         
         String[] fruit = word.split(",");
-        
-        System.out.println("１：" + fruit[0]);
-        System.out.println("２：" +  fruit[1]);
-        System.out.println("３：" +  fruit[2]);
-        System.out.println("４：" +  fruit[3]);
-        System.out.println("５：" +  fruit[4]);
+        //配列fruitの要素数よりiが少ない場合出力し、その後１を足す
+        for(int i = 0; i < fruit.length; i++) {
+            System.out.println(i+1 + "：" + fruit[i]);
+        }
     }
 }
