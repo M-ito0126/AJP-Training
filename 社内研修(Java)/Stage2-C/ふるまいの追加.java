@@ -13,16 +13,21 @@ public class Contain {
         
         System.out.println("入力された値は{" + word + "}です");
         System.out.println("桁数：{" + word.length() + "}桁");
+        //入力された文字の長さが１より大きい場合、出力
         if (word.length() > 1) {
             System.out.println("頭文字：{" + initial + "}");
             System.out.println("語尾：{" + endWord + "}");
         }
+        String result;
+        //文字列にAが含まれている場合
         if (index != -1) {
-            System.out.println("文字列にAを含む：{yes}");
+            result = "yes";
         }
         //文字列にAが含まれていない場合
         else {
-            System.out.println("文字列にAを含む：{no}");
+            result = "no";
         }
+        System.out.println("文字列にAを含む：{" + result + "}");
     }
+}
 }
