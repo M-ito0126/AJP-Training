@@ -1,8 +1,8 @@
 public class Array {
     public static void main(String []args) {
-        String str;
+        String word = "orange,apple,cherry,grape,apple";
         
-        String[] fruit = {"orange", "apple", "cherry", "grape", "apple"};
+        String[] fruit = word.split(",");
         
         System.out.println("１：" + fruit[0]);
         System.out.println("２：" +  fruit[1]);
