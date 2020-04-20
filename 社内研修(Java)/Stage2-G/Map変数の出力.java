@@ -19,9 +19,9 @@ public class WeekDays {
         Iterator<Map.Entry<String, String>> mapItr = map.entrySet().iterator();
         // key, valueの取得
         while(mapItr.hasNext()) {
-        // nextを使用して値を取得する
-        Map.Entry<String, String> days = mapItr.next();
-        System.out.println(days.getKey() + "（" + days.getValue() + "）");
+            // nextを使用して値を取得する
+            Map.Entry<String, String> days = mapItr.next();
+            System.out.println(days.getKey() + "（" + days.getValue() + "）");
         }
     }
 }
