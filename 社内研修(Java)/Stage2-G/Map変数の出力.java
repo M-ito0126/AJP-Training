@@ -16,9 +16,12 @@ public class WeekDays {
         for (int i =0; i < listAlphabet.size(); i++) {
             map.put(listAlphabet.get(i).toUpperCase(), listJapanese.get(i));
         }
-        //mapを出力する
-        for(Map.Entry<String, String> entry : map.entrySet()) {
-			System.out.println(entry.getKey() + "（" + entry.getValue() + "）");
-		}
+        Iterator<Map.Entry<String, String>> mapItr = map.entrySet().iterator();
+        // key, valueの取得
+        while(mapItr.hasNext()) {
+        // nextを使用して値を取得する
+        Map.Entry<String, String> days = mapItr.next();
+        System.out.println(days.getKey() + "（" + days.getValue() + "）");
+        }
     }
 }
