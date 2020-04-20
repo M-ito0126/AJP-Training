@@ -15,6 +15,7 @@ public class Measurement {
                 measurement.add(Calendar.SECOND, 1);
                 System.out.println(sdf.format(measurement.getTime()));
                 cnt++;
+                //カウント20以上になった場合タイマーを中止、中止の合図を出力
                 if(cnt >= 20) {
                     timer.cancel();
                     System.out.println("20秒カウント終わりました");
