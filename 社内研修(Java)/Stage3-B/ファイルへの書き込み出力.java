@@ -10,7 +10,6 @@ public class VariadicA {
     }
     public static String pathName = "/home/ec2-user/environment/サンプル実行/output/20200421_output.txt";
     private static void varA(String ... f) {
-        
         try {
             FileWriter file = new FileWriter(VariadicA.pathName);
             PrintWriter pw = new PrintWriter(new BufferedWriter(file));
