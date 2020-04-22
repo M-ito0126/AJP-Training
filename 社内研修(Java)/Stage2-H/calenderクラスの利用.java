@@ -12,8 +12,8 @@ public class Measurement {
         TimerTask task = new TimerTask() {
             int cnt = 0;
             public void run() {
-                measurement.add(Calendar.SECOND, 1);
                 System.out.println(sdf.format(measurement.getTime()));
+                measurement.add(Calendar.SECOND, 1);
                 cnt++;
                 //カウント20以上になった場合タイマーを中止、中止の合図を出力
                 if(cnt >= 20) {
