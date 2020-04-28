@@ -35,7 +35,7 @@ public class AddBehavior {
         //ファイルを日付順にソート
         File dir = new File("output/");
         File[] dirFiles = dir.listFiles();
-        Arrays.sort(dirFiles,   new Comparator<File>() {
+        Arrays.sort(dirFiles, new Comparator<File>() {
             public int compare(File df1, File df2) {
                 return Long.valueOf(df2.lastModified()).compareTo(df1.lastModified());
             }
