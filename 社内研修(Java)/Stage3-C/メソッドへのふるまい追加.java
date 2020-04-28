@@ -29,6 +29,7 @@ public class AddBehavior {
             }
             pw.close();
         }
+        //スタックトレース（例外内容）を出力する
         catch (IOException e) {
             e.printStackTrace();
         }
