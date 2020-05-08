@@ -5,7 +5,9 @@ import java.text.SimpleDateFormat;
 
 public class UserinfoAdd {
     public static class UserBean implements Serializable {
+        //シリアルバージョンUID
         private static final long serialVersionUID = 1L;
+        //Beansクラスのインスタンスをカウントする変数
         private static int cnt;
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日");
         private int id;
@@ -21,7 +23,7 @@ public class UserinfoAdd {
             this.affiliation = affiliation;
             UserBean.cnt ++;
         }
-        //setプロパティ
+        //setter
         public void setProperties(int id, String name, String pass, int age) {
             this.id = id;
             this.name = name;
@@ -31,7 +33,7 @@ public class UserinfoAdd {
         public void setBirthday(String birthday) throws ParseException {
             this.birthday = sdf.parse(birthday);
         }
-        //getプロパティ
+        //getter
         public int getId() {
             return this.id;
         }
