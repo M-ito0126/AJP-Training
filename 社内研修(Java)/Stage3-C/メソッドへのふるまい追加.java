@@ -9,12 +9,27 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 
 public class AddBehavior {
+    //出力先パス
+    public static String pathName = "/home/ec2-user/environment/サンプル実行/output/";
     public static void main(String []args) {
         String[] fruit = {"Apple", "lemon", "peach"};
         fileOperation(fruit);
     }
-    public static String pathName = "/home/ec2-user/environment/サンプル実行/output/";
     private static void fileOperation(String ... f) {
+        //ファイルを日付順にソート
+        File dir = new File("output/");
+        File[] dirFiles = dir.listFiles();
+        Arrays.sort(dirFiles, new Comparator<File>() {
+            public int compare(File df1, File df2) {
+                return Long.valueOf(df2.lastModified()).compareTo(df1.lastModified());
+            }
+        });
+        //ファイル数が５以上の場合、過去のファイルを削除しファイル数を4にする
+        if(dirFiles.length >= 5) {
+            for(int i = 4; i < dirFiles.length; i++) {
+                dirFiles[i].delete();
+            }
+        }
         //ファイル名に現在日付を入れる
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
@@ -33,19 +48,5 @@ public class AddBehavior {
         catch (IOException e) {
             e.printStackTrace();
         }
-        //ファイルを日付順にソート
-        File dir = new File("output/");
-        File[] dirFiles = dir.listFiles();
-        Arrays.sort(dirFiles, new Comparator<File>() {
-            public int compare(File df1, File df2) {
-                return Long.valueOf(df2.lastModified()).compareTo(df1.lastModified());
-            }
-        });
-        //ファイル数が５より多い場合、ファイルを削除しファイル数を５にする
-        if(dirFiles.length > 5) {
-            for(int i = 5; i < dirFiles.length; i++) {
-                dirFiles[i].delete();
-            }
-        }
     }
-}
+}}
