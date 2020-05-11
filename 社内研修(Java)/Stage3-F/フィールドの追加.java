@@ -4,12 +4,13 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 
 public class UserinfoAdd {
-    public static class UserBean implements Serializable {
-        //シリアルバージョンUID
+    //インスタンス生成数をカウントする変数
+    public static int cnt = 0;
+    public class UserBean implements Serializable {
+        //シリアライズUID
         private static final long serialVersionUID = 1L;
-        //Beansクラスのインスタンスをカウントする変数
-        private static int cnt;
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日");
+        //インスタンスフィールド
         private int id;
         private String name;
         private String pass;
@@ -21,7 +22,8 @@ public class UserinfoAdd {
         }
         public UserBean(String affiliation) {
             this.affiliation = affiliation;
-            UserBean.cnt ++;
+            //外部クラスUserinfoの変数cntでUserBeanのコンストラクタが生成されるたびにカウントする
+            UserinfoAdd.this.cnt ++;
         }
         //setter
         public void setProperties(int id, String name, String pass, int age) {
@@ -56,8 +58,7 @@ public class UserinfoAdd {
         }
     }
     public static void main(String []args) {
-        UserinfoAdd ui = new UserinfoAdd();
-        UserinfoAdd.UserBean ub = new UserBean("Osaka");
+        UserBean ub = new UserinfoAdd().new UserBean("Osaka");
         ub.setProperties(02, "伊藤", "abi2", 21);
         try {
             ub.setBirthday("1998年10月24日");
@@ -67,6 +68,6 @@ public class UserinfoAdd {
         }
         System.out.println(ub.toString());
         System.out.println("所属地：{" + ub.affiliation + "}");
-        System.out.println("カウント数：{" + UserBean.cnt + "}");
+        System.out.println("カウント数：{" + UserinfoAdd.cnt + "}");
     }
 }
