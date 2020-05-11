@@ -35,6 +35,9 @@ public class UserinfoAdd {
         public void setBirthday(String birthday) throws ParseException {
             this.birthday = sdf.parse(birthday);
         }
+        public void setAffiliation(String affiliation) {
+            this.affiliation = affiliation;
+        }
         //getter
         public int getId() {
             return this.id;
@@ -51,10 +54,13 @@ public class UserinfoAdd {
         public int getAge() {
             return this.age;
         }
+        public String getAfflication() {
+            return this.affiliation;
+        }
         String br = System.getProperty("line.separator");
         public String toString() {
-            return "ユーザーID：{" + this.getId() + "}" + br + "ユーザー名：{" + this.getName() + "}" + br + "パスワード：{" + this.getPass() + "}"
-                                   + br + "生年月日：{" + (sdf.format(this.getBirthday())) + "}" + br + "年齢：{" + this.getAge() + "}";
+            return "ユーザーID：{" + this.id + "}" + br + "ユーザー名：{" + this.name + "}" + br + "パスワード：{" + this.pass + "}"
+                                   + br + "生年月日：{" + sdf.format(this.birthday) + "}" + br + "年齢：{" + this.age + "}";
         }
     }
     public static void main(String []args) {
