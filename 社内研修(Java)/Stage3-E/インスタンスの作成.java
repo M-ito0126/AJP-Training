@@ -12,14 +12,16 @@ public class Userinfo {
         private String pass;
         private Date birthday;
         private int age;
+        //コンストラクタ
         public UserBean() {
         }
-        public void setProperties(int id, String name, String pass, int age) {
+        public UserBean(int id, String name, String pass, int age) {
             this.id = id;
             this.name = name;
             this.pass = pass;
             this.age = age;
         }
+        //getter
         public int getId() {
             return this.id;
         }
@@ -35,18 +37,25 @@ public class Userinfo {
         public int getAge() {
             return this.age;
         }
+        //setter
+        public void setProperties(int id, String name, String pass, int age) {
+            this.id = id;
+            this.name = name;
+            this.pass = pass;
+            this.age = age;
+        }
         public void setBirthday(String birthday) throws ParseException {
             this.birthday = sdf.parse(birthday);
         }
+        //改行コード
         String br = System.getProperty("line.separator");
         public String toString() {
-            return "ユーザーID：{" + id + "}" + br + "ユーザー名：{" + name + "}" + br + "パスワード：{" + pass + "}" + br + "生年月日：{" + (sdf.format(birthday)) + "}" + br + "年齢：{" + age + "}";
+            return "ユーザーID：{" + id + "}" + br + "ユーザー名：{" + name + "}" + br+ "パスワード：{" + pass + "}" + br 
+                                   + "生年月日：{" + (sdf.format(birthday)) + "}" + br + "年齢：{" + age + "}";
         }
     }
     public static void main(String []args) {
-        Userinfo ui = new Userinfo();
-        Userinfo.UserBean ub = ui.new UserBean();
-        ub.setProperties(02, "伊藤", "abi2", 21);
+        UserBean ub = new Userinfo().new UserBean(02, "伊藤", "abi2", 21);
         try {
             ub.setBirthday("1998年10月24日");
         }
