@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 
 public class Userinfo {
     public class UserBean implements Serializable {
+        //シリアライズUID
         private static final long serialVersionUID = 1L;
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日");
         private int id;
@@ -14,12 +15,6 @@ public class Userinfo {
         private int age;
         //コンストラクタ
         public UserBean() {
-        }
-        public UserBean(int id, String name, String pass, int age) {
-            this.id = id;
-            this.name = name;
-            this.pass = pass;
-            this.age = age;
         }
         //getter
         public int getId() {
@@ -55,7 +50,8 @@ public class Userinfo {
         }
     }
     public static void main(String []args) {
-        UserBean ub = new Userinfo().new UserBean(02, "伊藤", "abi2", 21);
+        UserBean ub = new Userinfo().new UserBean();
+        ub.setProperties(02, "伊藤", "abi2", 21);
         try {
             ub.setBirthday("1998年10月24日");
         }
