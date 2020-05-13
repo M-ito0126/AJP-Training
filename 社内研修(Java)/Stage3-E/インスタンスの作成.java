@@ -45,8 +45,8 @@ public class Userinfo {
         //改行コード
         String br = System.getProperty("line.separator");
         public String toString() {
-            return "ユーザーID：{" + id + "}" + br + "ユーザー名：{" + name + "}" + br+ "パスワード：{" + pass + "}" + br 
-                                   + "生年月日：{" + (sdf.format(birthday)) + "}" + br + "年齢：{" + age + "}";
+            return "ユーザーID：{" + this.id + "}" + br + "ユーザー名：{" + this.name + "}" + br+ "パスワード：{" + this.pass + "}" + br 
+                                   + "生年月日：{" + (sdf.format(this.birthday)) + "}" + br + "年齢：{" + this.age + "}";
         }
     }
     public static void main(String []args) {
