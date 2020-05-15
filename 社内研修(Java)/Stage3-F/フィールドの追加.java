@@ -40,11 +40,17 @@ public class UserinfoAdd {
         public void setPass(String pass) {
             this.pass = pass;
         }
+        public void setBirthday(String birthday) {
+            try {
+                this.birthday = sdf.parse(birthday);
+            }
+            //スタックトレース（例外内容）を出力
+            catch(ParseException e) {
+                e.printStackTrace();
+            }
+        }
         public void setAge(int age) {
             this.age = age;
-        }
-        public void setBirthday(String birthday) throws ParseException {
-            this.birthday = sdf.parse(birthday);
         }
         public void setAffiliation(String affiliation) {
             this.affiliation = affiliation;
@@ -85,13 +91,7 @@ public class UserinfoAdd {
         ub.setId(02);
         ub.setName("伊藤");
         ub.setPass("abi2");
-        try {
-            ub.setBirthday("1998年10月24日");
-        }
-        catch(ParseException e) {
-            //スタックトレース（例外内容）を出力
-            e.printStackTrace();
-        }
+        ub.setBirthday("1998年10月24日");
         ub.setAge(21);
         System.out.println(ub);
     }
