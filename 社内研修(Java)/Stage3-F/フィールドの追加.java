@@ -31,10 +31,16 @@ public class UserinfoAdd {
             UserinfoAdd.cnt ++;
         }
         //setter
-        public void setProperties(int id, String name, String pass, int age) {
+        public void setId(int id) {
             this.id = id;
+        }
+        public void setName(String name) {
             this.name = name;
+        }
+        public void setPass(String pass) {
             this.pass = pass;
+        }
+        public void setAge(int age) {
             this.age = age;
         }
         public void setBirthday(String birthday) throws ParseException {
@@ -53,8 +59,8 @@ public class UserinfoAdd {
         public String getPass() {
             return this.pass;
         }
-        public Date getBirthday() {
-            return this.birthday;
+        public String getBirthday() {
+            return sdf.format(this.birthday);
         }
         public int getAge() {
             return this.age;
@@ -68,16 +74,17 @@ public class UserinfoAdd {
         //toStringメソッドの戻り値に出力したいBeansクラスの各変数と文字列を返す
         public String toString() {
             return "ユーザーID：{" + this.id + "}" + br + "ユーザー名：{" + this.name + "}" + br + "パスワード：{" + this.pass + "}"
-                   + br + "生年月日：{" + sdf.format(this.birthday) + "}" + br + "年齢：{" + this.age + "}"
+                   + br + "生年月日：{" + getBirthday() + "}" + br + "年齢：{" + this.age + "}"
                    + br + "所属地：{" + this.affiliation + "}" + br + "カウント数：{" + UserinfoAdd.cnt + "}";
         }
     }
     public static void main(String []args) {
         //外部クラスUserinfoのインスタンスを生成し、内部クラスUserBeanのインスタンスを生成
         UserBean ub = new UserinfoAdd().new UserBean("Osaka");
-        //UserBeanにユーザID、ユーザ名、パスワード、年齢をセット
-        ub.setProperties(02, "伊藤", "abi2", 21);
-        //UserBeanに生年月日をセット
+        //UserBeanにユーザID、ユーザ名、パスワード、生年月日、年齢をセット
+        ub.setId(02);
+        ub.setName("伊藤");
+        ub.setPass("abi2");
         try {
             ub.setBirthday("1998年10月24日");
         }
@@ -85,6 +92,7 @@ public class UserinfoAdd {
             //スタックトレース（例外内容）を出力
             e.printStackTrace();
         }
+        ub.setAge(21);
         System.out.println(ub);
     }
 }
