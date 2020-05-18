@@ -23,12 +23,9 @@ public class UserinfoAdd {
         //所属地
         private String affiliation;
         //コンストラクタ
-        public UserBean() {
-            //外部クラスUserinfoAddの変数cntでUserBeanのコンストラクタが生成されるたびにカウント
-            UserinfoAdd.cnt ++;
-        }
         public UserBean(String affiliation) {
             this.affiliation = affiliation;
+            //外部クラスUserinfoAddの変数cntでUserBeanのコンストラクタが生成されるたびにカウント
             UserinfoAdd.cnt ++;
         }
         //setter
