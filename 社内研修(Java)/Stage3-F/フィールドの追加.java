@@ -24,10 +24,11 @@ public class UserinfoAdd {
         private String affiliation;
         //コンストラクタ
         public UserBean() {
+            //外部クラスUserinfoAddの変数cntでUserBeanのコンストラクタが生成されるたびにカウント
+            UserinfoAdd.cnt ++;
         }
         public UserBean(String affiliation) {
             this.affiliation = affiliation;
-            //外部クラスUserinfoAddの変数cntでUserBeanのコンストラクタが生成されるたびにカウント
             UserinfoAdd.cnt ++;
         }
         //setter
@@ -93,6 +94,7 @@ public class UserinfoAdd {
         ub.setPass("abi2");
         ub.setBirthday("1998年10月24日");
         ub.setAge(21);
+        //内部インスタンスを出力
         System.out.println(ub);
     }
 }
