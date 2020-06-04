@@ -1,0 +1,45 @@
+02-Jun-2020 13:50:02.564 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.34
+02-Jun-2020 13:50:02.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 3 2020 12:02:52 UTC
+02-Jun-2020 13:50:02.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.34.0
+02-Jun-2020 13:50:02.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+02-Jun-2020 13:50:02.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.14.171-105.231.amzn1.x86_64
+02-Jun-2020 13:50:02.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+02-Jun-2020 13:50:02.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.242.b08-0.50.amzn1.x86_64/jre
+02-Jun-2020 13:50:02.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_242-b08
+02-Jun-2020 13:50:02.576 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+02-Jun-2020 13:50:02.576 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat
+02-Jun-2020 13:50:02.576 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat
+02-Jun-2020 13:50:02.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/conf/logging.properties
+02-Jun-2020 13:50:02.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+02-Jun-2020 13:50:02.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+02-Jun-2020 13:50:02.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+02-Jun-2020 13:50:02.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+02-Jun-2020 13:50:02.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+02-Jun-2020 13:50:02.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat
+02-Jun-2020 13:50:02.591 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat
+02-Jun-2020 13:50:02.592 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/temp
+02-Jun-2020 13:50:02.592 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+02-Jun-2020 13:50:03.231 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+02-Jun-2020 13:50:03.291 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1,176] milliseconds
+02-Jun-2020 13:50:03.345 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+02-Jun-2020 13:50:03.347 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.34]
+02-Jun-2020 13:50:03.368 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/host-manager]
+02-Jun-2020 13:50:03.922 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/host-manager] has finished in [554] ms
+02-Jun-2020 13:50:03.923 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/test]
+02-Jun-2020 13:50:03.995 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/test] has finished in [72] ms
+02-Jun-2020 13:50:03.996 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/ROOT]
+02-Jun-2020 13:50:04.036 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/ROOT] has finished in [40] ms
+02-Jun-2020 13:50:04.038 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/answer]
+02-Jun-2020 13:50:04.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/answer] has finished in [42] ms
+02-Jun-2020 13:50:04.085 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/docs]
+02-Jun-2020 13:50:04.117 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/docs] has finished in [32] ms
+02-Jun-2020 13:50:04.122 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/examples]
+02-Jun-2020 13:50:04.643 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/examples] has finished in [522] ms
+02-Jun-2020 13:50:04.645 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/manager]
+02-Jun-2020 13:50:04.682 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ec2-user/environment/AJP-Training/社内研修(Webアプリケーション)/Stage1-A/Tomcat/webapps/manager] has finished in [37] ms
+02-Jun-2020 13:50:04.691 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+02-Jun-2020 13:50:04.719 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1,427] milliseconds
+02-Jun-2020 18:47:08.473 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+02-Jun-2020 18:47:08.481 INFO [Thread-4] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+02-Jun-2020 18:47:08.548 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+02-Jun-2020 18:47:08.551 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
