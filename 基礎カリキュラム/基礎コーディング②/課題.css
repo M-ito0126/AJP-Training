@@ -1,0 +1,17 @@
+.red-black{
+    background:linear-gradient(90deg, #FF0000 0%, #FF0000 50%, #000000 50%, #000000 100%);
+    width:1500px;
+    height:360px;
+}
+
+.color4{
+    background:linear-gradient(90deg, #00B0F0 0%, #00B0F0 25%, #A9D18E 25%, #A9D18E 50%, #2E75B6 50%, #2E75B6 75%, #C55A11 75%, #C55A11 100%);
+    width:1500px;
+    height:180px;
+}
+
+.yellow{
+    background-color:#FFD966;
+    width:1500px;
+    height:750px;
+}
