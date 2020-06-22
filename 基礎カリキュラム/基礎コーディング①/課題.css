@@ -1,0 +1,11 @@
+.red-yellow{
+    background:linear-gradient(90deg, #FF0000 0%, #FF0000 50%, #FFFF00 50%, #FFFF00 100%);
+    width:1500px;
+    height:375px;
+}
+
+.blue{
+    background-color:#00B0F0;
+    width:1500px;
+    height:750px;
+}
