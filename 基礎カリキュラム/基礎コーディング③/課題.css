@@ -1,0 +1,66 @@
+body{
+    background-image:url(https://www.nippon-animation.co.jp/system/content/2020/04/webmtg_vback06.jpg);
+    background-repeat:no-repeat;
+    background-size:1500px 720px;
+    margin:0;
+    padding:0;
+}
+
+.yellow{
+    display:inline-block;
+    background-color:#FFD966;
+    width:1500px;
+    height:80px;
+    text-align:center;
+    vertical-align: middle;
+}
+
+.gray{
+    background-color:#DAE3F3;
+    width:400px;
+    height:128px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.bright-yellow{
+    background-color:#FFCC00;
+    width:400px;
+    height:128px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.skyblue{
+    background-color:#66CCFF;
+    width:400px;
+    height:128px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.purple{
+    background-color:#6666FF;
+    width:400px;
+    height:128px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.lightgreen{
+    background-color:#66FF66;
+    width:400px;
+    height:128px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+h2{
+    display:block;
+    border-bottom:solid 1px black;
+}
