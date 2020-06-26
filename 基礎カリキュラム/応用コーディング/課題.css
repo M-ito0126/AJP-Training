@@ -1,0 +1,298 @@
+/*サイト全体*/
+body{
+    background-color:#F6F6F6;
+    margin:0 auto;
+    font-family:Verdana,Arial,Helvetica,'meirio','メイリオ','Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4',Osaka,'ＭＳ Ｐゴシック',sans-serif !important;
+    color:#515151;
+}
+
+#wrapper{
+    margin:0;
+    padding:0;
+    border-top:solid 8px #6CC6C4;
+}
+/*ヘッダー*/
+#header-box{
+    margin:0 auto 20px;
+    width:935px;
+}
+
+#header{
+    position:relative;
+    height:200px;
+}
+
+.header-logo{
+    position:absolute;
+    top:50px;
+    left:0;
+    margin:0;
+    padding:0;
+}
+
+.header-logo img{
+    max-width:100%;
+    height:auto;
+}
+
+.slogan{
+    position:absolute;
+    top:14px;
+    right:0;
+    margin:0;
+    padding:0;
+    font-size:10px;
+    text-align:right;
+}
+
+.tel{
+    position:absolute;
+    top:12px;
+    right:0;
+    width:215px;
+    margin:0;
+    padding:0;
+}
+
+.tel img{
+    position:absolute;
+    top:29px;
+    left:0px;
+    width:20px;
+    margin:0 14px 0 0;
+}
+
+.tel p{
+    float:right;
+    font-size:25.5px;
+}
+
+.time{
+    position:absolute;
+    display:inline-block;
+    top:80px;
+    right:0;
+    margin:0;
+    padding:9px 19px;
+    border:solid 1px #D6D6D6;
+    font-size:10px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+.time span{
+    color:#B22C00;
+}
+
+.main-menu{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:70px;
+    border:solid 1px #6CC6C4;
+    border-radius:6px;
+    background-image:linear-gradient(#9CE3E1 0%, #6CC6C4 100%);
+}
+
+.main-menu ul{
+    list-style:none;
+    height:70px;
+    margin:0;
+    padding:0;
+}
+
+.main-menu li{
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+.main-menu a{
+    display:block;
+    padding:20px 0 20px;
+    width:185px;
+    height:30px;
+    color:#FFFFFF;
+    font-weight:bold;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 2px #6CC6C4;
+    border-left:solid 1px #99E1DF;
+    border-right:solid 1px #71C9C7;
+}
+
+.first{
+    border-radius:6px 0 0 6px;
+}
+
+.last{
+    border-radius:0 6px 6px 0;
+}
+
+.menu-top{
+    display:block;
+    font-size:14px;
+}
+
+.menu-end{
+    display:block;
+    font-size:10px;
+    line-height:22px;
+}
+/*メイン*/
+#article{
+    margin:0 auto;
+    width:936px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#main{
+    float:right;
+    width:650px
+}
+
+.mainImg img{
+    width:100%;
+    height:auto;
+}
+
+.info{
+    margin:5px 0 0 0;
+    padding:30px;
+    background-color:#FFFFFF;
+    border-radius:0 0 6px 6px;
+}
+
+.info h2{
+    font-weight:bold;
+    margin-bottom:20px;
+    padding:0 0 15px;
+    border-bottom:solid 3px #6CC6C4;
+}
+
+.news-box dl{
+    margin:0 0 10px;
+    padding:0 7px 0;
+    word-break:break-all
+}
+
+.news-box dt{
+    float:left;
+    padding:10px 0 12px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.news-box dd{
+    margin:0;
+    padding:10px 8px 12px 140px;
+    font-size:13px;
+    line-height:18px;
+    border-bottom:dotted 1px #CCCCCC;
+}
+
+#side-menu{
+    width:265px;
+}
+
+.sideTitle{
+    height:40px;
+    margin:0;
+    padding:0 15px;
+    background-image:linear-gradient(#9CE3E1 0%, #6CC6C4 100%);
+    color:#FFFFFF;
+    font-weight:bold;
+    line-height:42px;
+    border:solid 1px #6CC6C4;
+    border-radius:6px 6px 0 0;
+}
+
+.sideList{
+    background-color:#FFFFFF;
+    border:solid 1px #6CC6C4;
+    margin:0 0 20px;
+}
+
+.sideList ul{
+    margin:0 0 20px;
+    padding:0;
+    list-style:none;
+}
+
+.sideList li{
+    margin:0 12px 0;
+    padding:0 0 0 30px;
+    background-image:url("img/bgListIcon01.png");
+    background-repeat:no-repeat;
+    background-position:left 8px top 17px;
+    border-bottom:solid 1px #6CC6C4;
+}
+
+.sideList a{
+    display:block;
+    margin:0;
+    padding:16px 0;
+    text-decoration:none;
+    color:#595959;
+    font-weight:bold;
+    font-size:14px;
+}
+/*フッター*/
+#footer-box{
+    margin:20px 0 0;
+    height:135px;
+}
+
+#footer{
+    width:935px;
+    margin:0 auto;
+    padding:0;
+}
+
+.footer-menu ul{
+    margin:0;
+    padding:0 0 0 15px;
+    height:30px;
+    list-style:none;
+    background:#6CC6C4;
+    border-radius:6px;
+}
+
+.footer-menu li{
+    margin:0;
+    padding:0 20px 0 25px;
+    float:left;
+    background-image:url("img/bgFooterIcon.png");
+    background-repeat:no-repeat;
+    background-position:left 0px top 7px;
+    color:#FFFFFF;
+}
+
+.footer-menu a{
+    text-decoration:none;
+    line-height:30px;
+    font-size:13px;
+    color:#FFFFFF;
+}
+
+.footer-address{
+    margin:20px 0;
+    text-align:right;
+    font-size:13px;
+}
+
+.footer-address span{
+    font-weight:bold;
+}
+
+.copyright{
+    padding:15px 0;
+    text-align:center;
+    font-size:12px;
+    border-top:solid 2px #6CC6C4;
+}
